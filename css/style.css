@@ -23,6 +23,7 @@ body a {
 
 .links {
   height: 50px;
+  max-width: 100%;
   background: #efefef;
 }
 
@@ -245,17 +246,14 @@ body a {
 .prod-btn {
   width: 130px;
   height: 35px;
-  left: 467px;
-  top: 1303px;
   border: none;
   background: #f13c6e;
   border-radius: 30px;
 
   font-weight: 400;
   font-size: 14px;
-  line-height: 16px;
   color: #ffffff;
-  margin-left: 62px;
+  margin: 0 0 25px 62px;
   cursor: pointer;
 }
 
@@ -312,6 +310,13 @@ body a {
   line-height: 20px;
   color: #FFFFFF;
   padding: 25px 84px 25px 0;
+}
+
+.burger_btn {
+  border: none;
+  background: none;
+  margin-right: 34px;
+  display: none;
 }
 
 .dell-p-r {
@@ -387,24 +392,34 @@ body a {
   gap: 30px;
 }
 
-.category-item {
+.List-title {
   font-weight: 500;
   font-size: 16px;
   color: #000000;
+  padding-bottom: 30px;
 }
 
-.cat-hr {
-  width: 255px;
-  height: 0px;
-  border: 1px solid #EFEFEF;
+.main_list {
+  padding-top: 25px;
 }
 
-.other {
+.list_point {
+  list-style-type: none;
+  padding-top: 15px;
+}
+
+.list_point a {
+  text-decoration: none;
   font-weight: 400;
   font-size: 12px;
   color: #828282;
-  cursor: pointer;
 }
+
+.list_hr {
+  border: 1px solid #EFEFEF;
+  max-width: 255px;
+}
+
 
 .footer {
   background: #FFFFFF;
@@ -489,19 +504,272 @@ body a {
 .policy-item {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 25px 0;
 }
 
 .policy-p {
   font-weight: 400;
   font-size: 12px;
-  line-height: 14px;
   color: #828282;
 }
 
 .policy-a {
   font-weight: 400;
   font-size: 12px;
-  line-height: 14px;
   color: #828282;
+}
+
+@media (max-width: 1024px) {
+  .dell-content {
+    grid-template-columns: 496px 496px;
+  }
+
+  .product {
+    grid-template-columns: repeat(4, 224px);
+    gap: 32px;
+  }
+
+  .impuls-content {
+    grid-template-columns: repeat(4, 256px);
+  }
+
+  .category-content {
+    gap: 26px;
+  }
+}
+
+@media (max-width: 768px) {
+  .product {
+    grid-template-columns: repeat(3, 224px);
+  }
+
+  .dell-content {
+    grid-template-columns: 768px;
+  }
+
+  .impuls-content {
+    grid-template-columns: repeat(2, 380px);
+    grid-auto-rows: 124px;
+    grid-auto-columns: 119px;
+    gap: 4px;
+    padding: 0;
+  }
+
+  .category-content {
+    display: grid;
+    grid-template-columns: repeat(4, 170px);
+    gap: 30px;
+  }
+
+  .info {
+    flex-wrap: wrap;
+  }
+
+  .contakt-right {
+    padding-bottom: 20px;
+  }
+
+  .contakt-right a {
+    padding: 40px 40px 0 310px;
+  }
+
+  .content {
+    background-position: center;
+  }
+
+  .content-info {
+    padding-left: 20px;
+  }
+
+  .offers-p {
+    padding-left: 20px;
+  }
+
+  .foot-info {
+    flex-wrap: wrap;
+  }
+
+  .foot-right {
+    padding-top: 30px;
+  }
+
+  .policy-p {
+    font-size: 10px;
+  }
+
+  policy-a {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product {
+    grid-template-columns: repeat(2, 193px);
+  }
+
+  .links {
+    display: none;
+  }
+
+  .search-center {
+    display: none;
+  }
+
+  .info {
+    flex-wrap: nowrap;
+    justify-content: left;
+  }
+
+  .contakt-right a {
+    padding-left: 0;
+  }
+
+  .left-logo {
+    width: 70px;
+    padding-right: 5px;
+  }
+
+  .beauty_logo {
+    width: 70px;
+  }
+
+  .contakt-right a {
+    font-size: 11px;
+  }
+
+  .hr {
+    display: none;
+  }
+
+  .contakt-right {
+    display: none;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .logo-left {
+    padding-top: 0px;
+  }
+
+  .dell-content {
+    grid-template-columns: 480px;
+  }
+
+  .impuls-content {
+    grid-template-columns: repeat(2, 237px);
+  }
+
+  .category-content {
+    grid-template-columns: repeat(2, 170px);
+  }
+
+  .lef-bor {
+    margin-right: 10px;
+  }
+
+  .lef-bor {
+    height: 35px;
+    width: 35px;
+  }
+
+  .foot-a {
+    padding-right: 150px;
+  }
+
+  .policy-item {
+    flex-direction: column;
+  }
+
+  .policy-p {
+    font-size: 9px;
+  }
+
+  .logo-left {
+    padding-right: 190px;
+  }
+
+  .burger_btn {
+    display: block;
+  }
+}
+
+@media (max-width: 375px) {
+  .product {
+    grid-template-columns: repeat(1, 373px);
+  }
+
+  .dell-content {
+    grid-template-columns: 450px;
+  }
+
+  .dell-content {
+    grid-template-columns: 375px;
+  }
+
+
+  .dell-p-l {
+    font-size: 10px;
+  }
+
+  .dell-p-r {
+    font-size: 9px;
+  }
+
+
+  .dell-h3 {
+    font-size: 14px;
+  }
+
+  .dell-inp {
+    width: 180px;
+  }
+
+  .dell-p-к {
+    font-size: 10px;
+}
+
+.dell_svg {
+  width: 68px;
+}
+
+.content {
+  height: 460px;
+  
+}
+
+.impuls-content {
+  grid-template-columns: repeat(2, 184px);
+}
+
+.dell-p-l {
+  padding: 25px 54px 25px 0;
+}
+
+.logo-left {
+  padding-right: 175px;
+}
+
+.foot-p {
+  font-size: 10px;
+}
+
+.foot-a {
+  padding-right: 50px;
+}
+
+.footer-inner {
+  padding: 40px 0 40px;
+}
+
+.policy-p {
+  font-size: 7px;
+}
+
+.policy-a {
+  font-size: 9px;
+}
+
 }

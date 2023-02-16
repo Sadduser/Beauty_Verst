@@ -9,6 +9,7 @@
   <title>BEAUTY</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
@@ -18,19 +19,19 @@
     <div class="links">
       <ul class="top-ul">
         <li class="top-li">
-          <a href="#">Доставка</a>
+          <a href="#content">Кресло</a>
         </li>
         <li class="top-li">
-          <a href="#">Оплата</a>
+          <a href="#offers">Предложения</a>
         </li>
         <li class="top-li">
-          <a href="#">Отзывы</a>
+          <a href="#dellivery">Бонусы</a>
         </li>
         <li class="top-li">
-          <a href="#">Вопрос - ответ</a>
+          <a href="#category">категории</a>
         </li>
         <li class="top-li">
-          <a href="#">Контакты</a>
+          <a href="#footer">Контакты</a>
         </li>
       </ul>
     </div><!-- /links-->
@@ -39,7 +40,17 @@
 
       <div class="logo-left">
         <img src="img/logo.svg" alt="logo" class="left-logo">
-        <img src="img/BEAUTY.svg" alt="logo BEAUTY">
+        <img src="img/BEAUTY.svg" alt="logo BEAUTY" class="beauty_logo">
+      </div>
+
+      <div class="burger_menu">
+        <button class="burger_btn" type="button">
+          <span class="material-icons">
+            menu
+          </span>
+        </button>
+
+        
       </div>
 
       <div class="search-center">
@@ -54,13 +65,15 @@
       </div>
 
       <div class="contakt-right">
-        <a href="#">8 (812) 123-45-67</a>
+        <a href="tel:8 (812) 123-45-67">8 (812) 123-45-67</a>
 
         <button class="btn-tel">Обратный звонок</button>
 
       </div>
 
     </div><!-- /info-->
+
+
 
   </header><!-- /header-->
 
@@ -95,7 +108,7 @@
 
   <main>
 
-    <section class="content">
+    <section id="content" class="content">
 
       <div class="content-info">
 
@@ -120,22 +133,22 @@
 
     </section><!-- content-->
 
-    <section class="offers">
+    <section class="offers" id="offers">
       <div class="offers-inner">
 
-        <p class="offers-p">
+        <h2 class="offers-p">
           Специальные предложения
-        </p>
+        </h2>
 
         <div class="product">
 
           <div class="item-product">
             <img src="img/kreslo.png" alt="armchair" class="img-product">
-            <p class="prod-inf">
+            <h3 class="prod-inf">
               Парикмахерское кресло
               <br>
               «Норм» гидравлическое
-            </p>
+            </h3>
 
             <p class="prod-pr">
               9900 ₽
@@ -149,11 +162,11 @@
 
           <div class="item-product">
             <img src="img/kreslo.png" alt="armchair" class="img-product">
-            <p class="prod-inf">
+            <h3 class="prod-inf">
               Парикмахерское кресло
               <br>
               «Норм» гидравлическое
-            </p>
+            </h3>
 
             <p class="prod-pr">
               9900 ₽
@@ -166,11 +179,11 @@
 
           <div class="item-product">
             <img src="img/kreslo.png" alt="armchair" class="img-product">
-            <p class="prod-inf">
+            <h3 class="prod-inf">
               Парикмахерское кресло
               <br>
               «Норм» гидравлическое
-            </p>
+            </h3>
 
             <p class="prod-pr">
               9900 ₽
@@ -183,11 +196,11 @@
 
           <div class="item-product">
             <img src="img/kreslo.png" alt="armchair" class="img-product">
-            <p class="prod-inf">
+            <h3 class="prod-inf">
               Парикмахерское кресло
               <br>
               «Норм» гидравлическое
-            </p>
+            </h3>
 
             <p class="prod-pr">
               9900 ₽
@@ -204,7 +217,7 @@
     </section><!-- /offers-->
 
 
-    <section class="dellivery">
+    <section class="dellivery" id="dellivery">
 
       <div class="dellivery-inner">
 
@@ -212,16 +225,16 @@
 
           <div class="dell-left">
 
-            <div>
-              <p class="dell-h3">
+            <div class="dellivery_info">
+              <h2 class="dell-h3">
                 Получайте бонусы и подарки
-              </p>
+              </h2>
 
-              <p class="dell-p-l">
+              <h3 class="dell-p-l">
                 Каждый месяц разыгрываем
                 <br>
                 10 000 рублей для наших клиентов
-              </p>
+              </h3>
 
               <form action="#" class="dell-form">
                 <input type="email" placeholder="Введите e-mail" class="dell-inp">
@@ -229,31 +242,31 @@
             </div>
 
             <div>
-              <img src="img/later.svg" alt="later">
+              <img src="img/later.svg" alt="later" class="dell_svg">
             </div>
 
           </div>
 
           <div class="dell-right">
 
-            <div>
-              <p class="dell-h3">
+            <div class="dellivery_info">
+              <h2 class="dell-h3">
                 Заходите к нам
-              </p>
+              </h2>
 
-              <p class="dell-p-r">
+              <h3 class="dell-p-r">
                 Более 300 магазинов
                 <br>
                 по всей России
-              </p>
+              </h3>
 
               <button class="dell-btn">
                 Карта магазинов
               </button>
             </div>
 
-            <div>
-              <img src="img/truck.svg" alt="truck">
+            <div class="dell_svg">
+              <img src="img/truck.svg" alt="truck" class="dell_svg">
             </div>
 
           </div>
@@ -266,7 +279,7 @@
 
 
 
-    <section class="impuls">
+    <section class="impuls" id="impuls">
 
       <div class="impuls-inner">
 
@@ -319,19 +332,19 @@
     <section class="offers">
       <div class="offers-inner">
 
-        <p class="offers-p">
+        <h2 class="offers-p">
           Вы недавно смотрели
-        </p>
+        </h2>
 
         <div class="product">
 
           <div class="item-product">
             <img src="img/kreslo.png" alt="armchair" class="img-product">
-            <p class="prod-inf">
+            <h3 class="prod-inf">
               Парикмахерское кресло
               <br>
               «Норм» гидравлическое
-            </p>
+            </h3>
 
             <p class="prod-pr">
               9900 ₽
@@ -345,11 +358,11 @@
 
           <div class="item-product">
             <img src="img/kreslo.png" alt="armchair" class="img-product">
-            <p class="prod-inf">
+            <h3 class="prod-inf">
               Парикмахерское кресло
               <br>
               «Норм» гидравлическое
-            </p>
+            </h3>
 
             <p class="prod-pr">
               9900 ₽
@@ -362,11 +375,11 @@
 
           <div class="item-product">
             <img src="img/kreslo.png" alt="armchair" class="img-product">
-            <p class="prod-inf">
+            <h3 class="prod-inf">
               Парикмахерское кресло
               <br>
               «Норм» гидравлическое
-            </p>
+            </h3>
 
             <p class="prod-pr">
               9900 ₽
@@ -379,11 +392,11 @@
 
           <div class="item-product">
             <img src="img/kreslo.png" alt="armchair" class="img-product">
-            <p class="prod-inf">
+            <h3 class="prod-inf">
               Парикмахерское кресло
               <br>
               «Норм» гидравлическое
-            </p>
+            </h3>
 
             <p class="prod-pr">
               9900 ₽
@@ -399,151 +412,63 @@
       </div>
     </section><!-- /offers-->
 
-    <section class="category">
+    <section class="category" id="category">
 
       <div class="category-inner">
 
         <div class="category-content">
 
-          <div class="popular-div">
-            <p class="category-item">
-              Популярные
-              <br>
-              <br>
-              категории
-            </p>
-            <br>
-            <br>
-            <hr class="cat-hr">
-            <br>
-            <br>
-            <p class="other">
-              Насадки
-              <br>
-              <br>
-              Инструменты
-              <br>
-              <br>
-              Гель-лаки
-              <br>
-              <br>
-              Дизайн
-              <br>
-              <br>
-              Наращивание
-              <br>
-              <br>
-              Оборудование
-              <br>
-              <br>
-            </p>
+          <div class="list-category">
+            <h2 class="List-title">Популярные<br>категории</h2>
+            <hr class="list_hr">
+            <ul class="main_list">
+              <li class="list_point"><a href="#">Насадки</a></li>
+              <li class="list_point"><a href="#">Инструменты</a></li>
+              <li class="list_point"><a href="#">Гель-лаки</a></li>
+              <li class="list_point"><a href="#">Дизайн</a></li>
+              <li class="list_point"><a href="#">Наращивание</a></li>
+              <li class="list_point"><a href="#">Оборудование</a></li>
+            </ul>
+          </div>
 
-          </div><!-- /popular-div-->
+          <div class="list-category">
+            <h2 class="List-title">Популярные<br>категории</h2>
+            <hr class="list_hr">
+            <ul class="main_list">
+              <li class="list_point"><a href="#">Насадки</a></li>
+              <li class="list_point"><a href="#">Инструменты</a></li>
+              <li class="list_point"><a href="#">Гель-лаки</a></li>
+              <li class="list_point"><a href="#">Дизайн</a></li>
+              <li class="list_point"><a href="#">Наращивание</a></li>
+              <li class="list_point"><a href="#">Оборудование</a></li>
+            </ul>
+          </div>
 
-          <div class="popular-div">
-            <p class="category-item">
-              Популярные
-              <br>
-              <br>
-              категории
-            </p>
-            <br>
-            <br>
-            <hr class="cat-hr">
-            <br>
-            <br>
-            <p class="other">
-              Насадки
-              <br>
-              <br>
-              Инструменты
-              <br>
-              <br>
-              Гель-лаки
-              <br>
-              <br>
-              Дизайн
-              <br>
-              <br>
-              Наращивание
-              <br>
-              <br>
-              Оборудование
-              <br>
-              <br>
-            </p>
+          <div class="list-category">
+            <h2 class="List-title">Популярные<br>категории</h2>
+            <hr class="list_hr">
+            <ul class="main_list">
+              <li class="list_point"><a href="#">Насадки</a></li>
+              <li class="list_point"><a href="#">Инструменты</a></li>
+              <li class="list_point"><a href="#">Гель-лаки</a></li>
+              <li class="list_point"><a href="#">Дизайн</a></li>
+              <li class="list_point"><a href="#">Наращивание</a></li>
+              <li class="list_point"><a href="#">Оборудование</a></li>
+            </ul>
+          </div>
 
-          </div><!-- /popular-div-->
-
-          <div class="popular-div">
-            <p class="category-item">
-              Популярные
-              <br>
-              <br>
-              категории
-            </p>
-            <br>
-            <br>
-            <hr class="cat-hr">
-            <br>
-            <br>
-            <p class="other">
-              Насадки
-              <br>
-              <br>
-              Инструменты
-              <br>
-              <br>
-              Гель-лаки
-              <br>
-              <br>
-              Дизайн
-              <br>
-              <br>
-              Наращивание
-              <br>
-              <br>
-              Оборудование
-              <br>
-              <br>
-            </p>
-
-          </div><!-- /popular-div-->
-
-          <div class="popular-div">
-            <p class="category-item">
-              Популярные
-              <br>
-              <br>
-              категории
-            </p>
-            <br>
-            <br>
-            <hr class="cat-hr">
-            <br>
-            <br>
-            <p class="other">
-              Насадки
-              <br>
-              <br>
-              Инструменты
-              <br>
-              <br>
-              Гель-лаки
-              <br>
-              <br>
-              Дизайн
-              <br>
-              <br>
-              Наращивание
-              <br>
-              <br>
-              Оборудование
-              <br>
-              <br>
-            </p>
-
-          </div><!-- /popular-div-->
+          <div class="list-category">
+            <h2 class="List-title">Популярные<br>категории</h2>
+            <hr class="list_hr">
+            <ul class="main_list">
+              <li class="list_point"><a href="#">Насадки</a></li>
+              <li class="list_point"><a href="#">Инструменты</a></li>
+              <li class="list_point"><a href="#">Гель-лаки</a></li>
+              <li class="list_point"><a href="#">Дизайн</a></li>
+              <li class="list_point"><a href="#">Наращивание</a></li>
+              <li class="list_point"><a href="#">Оборудование</a></li>
+            </ul>
+          </div>
 
         </div><!-- /category-content-->
 
@@ -553,7 +478,7 @@
 
   </main> <!-- /main-->
 
-  <footer class="footer">
+  <footer class="footer" id="footer">
 
     <div class="footer-inner">
 
@@ -561,32 +486,36 @@
 
         <div class="foot-left">
 
-          <div class="lef-bor">
+          <a href="#" class="lef-bor">
             <img src="img/yt-logo.png" alt="YouTube logo">
-          </div>
+          </a>
 
-          <div class="lef-bor">
+          <a href="#" class="lef-bor">
             <img src="img/wk-logo.png" alt="Vkontakte logo">
-          </div>
+          </a>
 
-          <div class="lef-bor">
+
+          <a href="#" class="lef-bor">
             <img src="img/facebook-logo.png" alt="facebook logo">
-          </div>
+          </a>
 
-          <div class="lef-bor">
+
+
+          <a href="#" class="lef-bor">
             <img src="img/instagram-logo.png" alt="instagram logo">
-          </div>
+          </a>
+
 
         </div>
 
         <div class="foot-centr">
-          <p class="foot-p">198555, Невский пр. 140, офис 140</p>
+          <address class="foot-p">198555, Невский пр. 140, офис 140</address>
 
         </div>
 
         <div class="foot-right">
           <div class="foot-a">
-            <a href="#">8 (812) 123-45-67</a>
+            <a href="tel:8 (812) 123-45-67">8 (812) 123-45-67</a>
           </div>
 
           <button class="btn-foot">Обратный звонок</button>
