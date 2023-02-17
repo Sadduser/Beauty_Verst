@@ -696,7 +696,7 @@ body a {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 376px) {
   .product {
     grid-template-columns: repeat(1, 373px);
   }
@@ -708,6 +708,8 @@ body a {
   .dell-content {
     grid-template-columns: 375px;
   }
+
+  Added mobile layout
 
 
   .dell-p-l {
