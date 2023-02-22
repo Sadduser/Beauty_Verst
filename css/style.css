@@ -203,6 +203,63 @@ body a {
   cursor: pointer;
 }
 
+.burger_button {
+  width: 25px;
+  height: 25px;
+  border: none;
+  background: none;
+
+}
+
+.burger_button .material-icons {
+  color: #000000;
+}
+
+/* Бургер меню */
+.burger-menu {
+  position: absolute;
+  width: 300px;
+  height: 500px;
+  background-color: #f13c6e;
+  overflow: hidden;
+  left: -100%;
+  transition: 1s;
+}
+
+.burger_close_btn {
+  width: 25px;
+  height: 25px;
+  border: none;
+  background: none;
+  padding: 5px;
+}
+
+.burger_close_btn .material-icons {
+  color: #ffffff;
+}
+
+
+.burger-ul {
+  padding-top: 25px;
+}
+
+.burger-li {
+  padding: 20px 0 10px 5px;
+
+}
+
+.burger-li a {
+  font-weight: 700;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.opened {
+  left: 0;
+  transition: 1s;
+}
+
+/*/Бургер меню */
 .offers {
   background: #e5e5e5;
 }
@@ -259,9 +316,9 @@ body a {
 
 .product {
   display: grid;
-  grid-template-columns: 255px 255px 255px 255px;
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 363px;
-  gap: 30px;
+  gap: 15px;
   margin-top: 38px;
 }
 
@@ -539,6 +596,11 @@ body a {
   }
 }
 
+.burger_button {
+  display: none;
+}
+
+
 @media (max-width: 768px) {
   .product {
     grid-template-columns: repeat(3, 224px);
@@ -691,7 +753,7 @@ body a {
     padding-right: 190px;
   }
 
-  .burger_btn {
+  .burger_button {
     display: block;
   }
 }
@@ -708,9 +770,6 @@ body a {
   .dell-content {
     grid-template-columns: 375px;
   }
-
-  Added mobile layout
-
 
   .dell-p-l {
     font-size: 10px;
@@ -731,47 +790,47 @@ body a {
 
   .dell-p-к {
     font-size: 10px;
-}
+  }
 
-.dell_svg {
-  width: 68px;
-}
+  .dell_svg {
+    width: 68px;
+  }
 
-.content {
-  height: 460px;
-  
-}
+  .content {
+    height: 460px;
 
-.impuls-content {
-  grid-template-columns: repeat(2, 184px);
-}
+  }
 
-.dell-p-l {
-  padding: 25px 54px 25px 0;
-}
+  .impuls-content {
+    grid-template-columns: repeat(2, 184px);
+  }
 
-.logo-left {
-  padding-right: 175px;
-}
+  .dell-p-l {
+    padding: 25px 54px 25px 0;
+  }
 
-.foot-p {
-  font-size: 10px;
-}
+  .logo-left {
+    padding-right: 175px;
+  }
 
-.foot-a {
-  padding-right: 50px;
-}
+  .foot-p {
+    font-size: 10px;
+  }
 
-.footer-inner {
-  padding: 40px 0 40px;
-}
+  .foot-a {
+    padding-right: 50px;
+  }
 
-.policy-p {
-  font-size: 7px;
-}
+  .footer-inner {
+    padding: 40px 0 40px;
+  }
 
-.policy-a {
-  font-size: 9px;
-}
+  .policy-p {
+    font-size: 7px;
+  }
+
+  .policy-a {
+    font-size: 9px;
+  }
 
 }
